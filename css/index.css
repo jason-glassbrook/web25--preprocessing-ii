@@ -179,6 +179,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.home header .image-content {
+  width: 100%;
+}
+.home header .text-content {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -189,11 +200,11 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .content-section .image-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .content-section .image-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
@@ -204,7 +215,7 @@ img {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.home .inverse-content .image-content {
   padding-right: 1%;
   padding-left: 0;
 }
