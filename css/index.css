@@ -305,6 +305,7 @@ img {
   }
 }
 .home .content-section .image-content img {
+  width: 100%;
   border-radius: 10px;
 }
 .home .inverse-content {
@@ -352,6 +353,7 @@ img {
   }
 }
 .home .content-destination img {
+  width: 100%;
   border-radius: 10px;
 }
 .home .content-pick {
