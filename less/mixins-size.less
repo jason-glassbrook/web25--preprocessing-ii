@@ -6,7 +6,7 @@
 .size-w-100of() { width: 100%; }
 
 .size-hw(
-  @hw ;
+  @hw :auto ;
   @h : @hw ; @w : @hw
 ) {
 	height: @h;
@@ -14,7 +14,7 @@
 }
 
 .min-size-hw(
-  @hw ;
+  @hw : auto ;
   @h : @hw ; @w : @hw
 ) {
 	min-height: @h;
@@ -22,7 +22,7 @@
 }
 
 .max-size-hw(
-  @hw ;
+  @hw :auto ;
   @h : @hw ; @w : @hw
 ) {
 	max-height: @h;
