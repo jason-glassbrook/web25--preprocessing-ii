@@ -181,8 +181,9 @@ img {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #ffffff;
   border-bottom: 2px dashed #c0c0c0;
+  background-color: #ffffff;
+  color: #212529;
 }
 .nav-bar .nav-area {
   display: flex ;
@@ -211,12 +212,16 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed #c0c0c0;
-  background: #ffebcd;
+  background-color: #ffebcd;
+  color: #212529;
 }
 .footer p {
   text-align: center;
-  color: #212529;
   padding: 20px;
+}
+.home {
+  background-color: #212529;
+  color: #212529;
 }
 .home header {
   border-bottom: 2px dashed #c0c0c0;

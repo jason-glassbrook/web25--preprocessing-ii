@@ -1,29 +1,37 @@
 // media
+
 @is-mobile: ~'(max-width: 500px)' ;
 
-// color assignments
-@font-color : @shark ;
-
-@nav-bg-color     : @white ;
-@nav-border-color : @silver ;
-
-@main-bg-color     : @white ;
-@main-border-color : @silver ;
-
-@button-bg-color     : @eastern-blue ;
-@button-border-color : @silver ;
-
-@footer-bg-color     : @sandy-beach ;
-@footer-border-color : @silver ;
-
 // colors
+
 @white        : #ffffff ;
 @silver       : #c0c0c0 ;
 @shark        : #212529 ;
 @eastern-blue : #17a2b8 ;
 @sandy-beach  : #ffebcd ;
 
+// color assignments
+
+@font-color : @shark ;
+
+@nav-fg-color     : @font-color ;
+@nav-bg-color     : @white ;
+@nav-border-color : @silver ;
+
+@main-fg-color     : @font-color ;
+@main-bg-color     : @white ;
+@main-border-color : @silver ;
+
+@button-fg-color     : @white ;
+@button-bg-color     : @eastern-blue ;
+@button-border-color : @silver ;
+
+@footer-fg-color     : @font-color ;
+@footer-bg-color     : @sandy-beach ;
+@footer-border-color : @silver ;
+
 // borders
+
 @nav-border : 2px dashed @nav-border-color ;
 @main-border : 2px dashed @main-border-color ;
 @footer-border : 2px dashed @footer-border-color ;

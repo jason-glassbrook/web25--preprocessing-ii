@@ -1,5 +1,8 @@
 .home {
 
+  background-color: @main-fg-color;
+  color: @main-fg-color;
+
   header {
     border-bottom: @main-border;
 
@@ -64,6 +67,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .button {
+        .custom-button( @button-fg-color ; @button-bg-color ; @button-border-color ) ;
+      }
     }
   }
 } // home
