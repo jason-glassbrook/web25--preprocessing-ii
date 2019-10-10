@@ -168,9 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-bottom: 2px dashed #c0c0c0;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #c0c0c0;
   background: #ffebcd;
 }
 .footer p {
