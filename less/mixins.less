@@ -29,51 +29,115 @@
 ///-------------------------------------
 /// spacing
 ///-------------------------------------
-/// margin
+/// margin (outs)
 ///-----------------
 
-.space-out-tb( @top : auto ; @bottom : @top ) {
-  margin-top : @top ;
-  margin-bottom : @bottom ;
+.outs-tblr(
+  @tblr : auto ;
+  @tb : @tblr ;
+  @lr : @tblr ;
+  @t : @tb ; @b : @tb ;
+  @l : @lr ; @r : @lr
+) {
+  .outs-tb( @t ; @b );
+  .outs-lr( @l ; @r );
 }
 
-.space-out-lr( @left : auto ; @right : @left ) {
-  margin-left : @left ;
-  margin-right : @right ;
+.outs-tb(
+  @tb : auto ;
+  @t : @tb ; @b : @tb
+) {
+  margin-top : @t ;
+  margin-bottom : @b ;
 }
 
-.space-out-auto-tb( @left: 0 ; @right : @left ) {
-  .space-out-tb();
-  .space-out-lr( @left ; @right );
+.outs-lr(
+  @lr : auto ;
+  @l : @lr ; @r : @lr
+) {
+  margin-left : @l ;
+  margin-right : @r ;
 }
 
-.space-out-auto-lr( @top: 0 ; @bottom: @top ) {
-  .space-out-tb( @top ; @bottom );
-  .space-out-lr();
+.outs-tb-auto-lr(
+  @tb : 0 ;
+  @t: @tb ; @b: @tb
+) {
+  .outs-tb( @t ; @b );
+  .outs-lr();
+}
+
+.outs-lr-auto-tb(
+  @lr : 0 ;
+  @l : @lr ; @r : @lr
+) {
+  .outs-tb();
+  .outs-lr( @l ; @r );
+}
+
+.end-outs-tb( @w : 0 ) {
+	&:first-child {
+		margin-top: @w;
+	}
+	&:last-child {
+		margin-bottom: @w;
+	}
+}
+
+.end-outs-lr( @w : 0 ) {
+	&:first-child {
+		margin-left: @w;
+	}
+	&:last-child {
+		margin-right: @w;
+	}
 }
 
 ///-----------------
-/// padding
+/// padding (ins)
 ///-----------------
 
-.space-in-tb( @top : auto ; @bottom : @top ) {
-  padding-top : @top ;
-  padding-bottom : @bottom ;
+.ins-tblr(
+  @tblr : auto ;
+  @tb : @tblr ;
+  @lr : @tblr ;
+  @t : @tb ; @b : @tb ;
+  @l : @lr ; @r : @lr
+) {
+  .ins-tb( @t ; @b );
+  .ins-lr( @l ; @r );
 }
 
-.space-in-lr( @left : auto ; @right : @left ) {
-  padding-left : @left ;
-  padding-right : @right ;
+.ins-tb(
+  @tb : auto ;
+  @t : @tb ; @b : @tb
+) {
+  padding-top : @t ;
+  padding-bottom : @b ;
 }
 
-.space-in-auto-tb( @left: 0 ; @right : @left ) {
-  .space-in-tb();
-  .space-in-lr( @left ; @right );
+.ins-lr(
+  @lr : auto ;
+  @l : @lr ; @r : @lr
+) {
+  padding-left : @l ;
+  padding-right : @r ;
 }
 
-.space-in-auto-lr( @top: 0 ; @bottom: @top ) {
-  .space-in-tb( @top ; @bottom );
-  .space-in-lr();
+.ins-tb-auto-lr(
+  @tb : 0 ;
+  @t: @tb ; @b: @tb
+) {
+  .ins-tb( @t ; @b );
+  .ins-lr();
+}
+
+.ins-lt-auto-tb(
+  @lr : 0 ;
+  @l : @lr ; @r : @lr
+) {
+  .ins-tb();
+  .ins-lr( @l ; @r );
 }
 
 ///-------------------------------------
