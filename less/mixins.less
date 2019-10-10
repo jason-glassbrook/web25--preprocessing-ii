@@ -20,7 +20,7 @@
 }
 
 .hover-decor(
-  @bg-color : none ;
+  @bg-color : initial ;
   @fg-color : inherit ;
   @text-decor : underline
 ) {
@@ -35,6 +35,15 @@
 /// buttons
 ///-------------------------------------
 
-.custom-button( @fg-color ; @bg-color ; @border-color ) {
+.custom-button( @bg-color ; @fg-color ; @border-color ) {
+  .default-decor( @bg-color ; @fg-color );
+  .hover-decor( lighten(@bg-color, 10%) ; @fg-color );
+  .ins-tblr( 10px ) ;
+
+  cursor: pointer;
   
+  border: 1px solid @border-color ;
+  border-radius: 10px;
+
+  text-align: center;
 }

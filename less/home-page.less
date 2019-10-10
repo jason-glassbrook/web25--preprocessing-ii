@@ -1,6 +1,6 @@
 .home {
 
-  background-color: @main-fg-color;
+  background-color: @main-bg-color;
   color: @main-fg-color;
 
   header {
@@ -69,7 +69,8 @@
       margin-bottom: 30px;
 
       .button {
-        .custom-button( @button-fg-color ; @button-bg-color ; @button-border-color ) ;
+        .custom-button( @button-bg-color ; @button-fg-color ; @button-border-color ) ;
+        .size-w-100of() ;
       }
     }
   }

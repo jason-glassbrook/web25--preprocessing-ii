@@ -164,7 +164,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  background-color: none;
+  background-color: initial;
   color: #17a2b8;
   text-decoration: underline;
 }
@@ -220,7 +220,7 @@ img {
   padding: 20px;
 }
 .home {
-  background-color: #212529;
+  background-color: #ffffff;
   color: #212529;
 }
 .home header {
@@ -284,4 +284,23 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .button {
+  background-color: #17a2b8;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.home .content-pick .destination .button:hover {
+  background-color: #1fc8e3;
+  color: #ffffff;
+  text-decoration: underline;
 }
