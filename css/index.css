@@ -132,8 +132,8 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
 body {
+  font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -156,7 +156,6 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
   padding-bottom: 10px;
 }
 img {
@@ -175,6 +174,30 @@ img {
   background-color: #ffffff;
   border-bottom: 2px dashed #c0c0c0;
 }
+.nav-bar .nav-area {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+.nav-bar .nav-area nav ul {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+.nav-bar .nav-area nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-bar .nav-area nav li:first-child {
+  margin-left: 0;
+}
+.nav-bar .nav-area nav li:last-child {
+  margin-right: 0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #c0c0c0;
@@ -183,7 +206,6 @@ img {
 .footer p {
   text-align: center;
   color: #212529;
-  font-size: 1.6rem;
   padding: 20px;
 }
 .home header {

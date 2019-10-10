@@ -3,6 +3,23 @@
 .nav-bar {
   .size-w-100of() ;
   .ins-tb( 30px ) ;
+
   background-color: @main-bg-color;
   border-bottom: @nav-border;
+
+  .nav-area {
+    .flex-box( @align-items-across-line: center );
+
+    nav {
+
+      ul {
+        .flex-box( @align-items-across-line: center );
+      }
+
+      li {
+        .outs-lr( 10px );
+        .end-outs-lr() ;
+      }
+    }
+  }
 }
