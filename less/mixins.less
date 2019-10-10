@@ -6,6 +6,21 @@
 @import './mixins-ins.less';
 
 ///-------------------------------------
+/// hover decoration
+///-------------------------------------
+
+.default-decor( @color : inherit ; @text-decor : none ) {
+  color : @color ;
+  text-decoration : @text-decor ;
+}
+.hover-decor( @color : inherit ; @text-decor : underline ) {
+  &:hover {
+    color : @color ;
+    text-decoration : @text-decor ;
+  }
+}
+
+///-------------------------------------
 /// buttons
 ///-------------------------------------
 
