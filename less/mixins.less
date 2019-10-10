@@ -4,27 +4,32 @@
 /// sizing
 ///-------------------------------------
 
-.size( @h ; @w )
-{
+.size-hw(
+  @hw ;
+  @h : @hw ; @w : @hw
+) {
 	height: @h;
 	width: @w;
 }
 
-.min-size( @h ; @w )
-{
+.min-size-hw(
+  @hw ;
+  @h : @hw ; @w : @hw
+) {
 	min-height: @h;
 	min-width: @w;
 }
 
-.max-size( @h ; @w )
-{
+.max-size-hw(
+  @hw ;
+  @h : @hw ; @w : @hw
+) {
 	max-height: @h;
 	max-width: @w;
 }
 
-.size-100of() { .size( 100% ; 100% ); }
-.tb-100of() { height: 100%; }
-.lr-100of() { width: 100%; }
+.size-h-100of() { height: 100%; }
+.size-w-100of() { width: 100%; }
 
 ///-------------------------------------
 /// spacing
