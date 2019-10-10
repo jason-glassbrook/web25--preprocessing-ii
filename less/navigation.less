@@ -1,24 +1,38 @@
 // Navigation Styles here
 
 .nav-bar {
-  .size-w-100of() ;
-  .ins-tb( 30px ) ;
+  .size-w-100of();
+  .ins-tb(30px);
 
   border-bottom: @nav-border;
   background-color: @nav-bg-color;
   color: @nav-fg-color;
 
   .nav-area {
-    .flex-box( @align-items-across-line: center );
+    .flex-box(@align-items-across-line: center);
+
+    @media @is-mobile {
+      .center-content(@main-axis: column ; @align-items-across-line: center);
+    }
 
     nav {
+      @media @is-mobile {
+        .size-w-100of();
+        margin-top: 20px;
+      }
+
       ul {
-        .flex-box( @align-items-across-line: center );
+        .flex-box(@align-items-across-line: center);
+        .size-w-100of();
+
+        @media @is-mobile {
+          .space-around-content(@align-items-across-line: center);
+        }
       }
 
       li {
-        .outs-lr( 10px );
-        .end-outs-lr() ;
+        .outs-lr(10px);
+        .end-outs-lr();
       }
     }
   }

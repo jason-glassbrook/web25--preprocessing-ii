@@ -134,14 +134,14 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -192,12 +192,37 @@ img {
   align-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .nav-bar .nav-area {
+    display: flex ;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-area nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 .nav-bar .nav-area nav ul {
   display: flex ;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-area nav ul {
+    display: flex ;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+  }
 }
 .nav-bar .nav-area nav li {
   margin-left: 10px;

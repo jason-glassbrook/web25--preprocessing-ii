@@ -1,5 +1,4 @@
 .home {
-
   background-color: @main-bg-color;
   color: @main-fg-color;
 
@@ -12,13 +11,13 @@
 
     .text-content {
       .size-w-100of();
-      .ins-tb( 20px );
+      .ins-tb(20px);
     }
   }
 
   .content-section {
     margin: 30px 0;
-    .space-between-content( @wrap-lines : wrap );
+    .space-between-content(@wrap-lines: wrap);
 
     .text-content {
       width: 48%;
@@ -62,15 +61,17 @@
   .content-pick {
     padding-top: 30px;
     border-top: @main-border;
-    .space-between-content( @wrap-lines : wrap );
+    .space-between-content(@wrap-lines: wrap);
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
       .button {
-        .custom-button( @button-bg-color ; @button-fg-color ; @button-border-color ) ;
-        .size-w-100of() ;
+        .custom-button(
+          @button-bg-color ; @button-fg-color ; @button-border-color
+        );
+        .size-w-100of();
       }
     }
   }
