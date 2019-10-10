@@ -6,16 +6,27 @@
 @import './mixins-ins.less';
 
 ///-------------------------------------
-/// hover decoration
+/// decoration
 ///-------------------------------------
 
-.default-decor( @color : inherit ; @text-decor : none ) {
-  color : @color ;
+.default-decor(
+  @bg-color : none ;
+  @fg-color : inherit ;
+  @text-decor : none
+) {
+  background-color : @bg-color ;
+  color : @fg-color ;
   text-decoration : @text-decor ;
 }
-.hover-decor( @color : inherit ; @text-decor : underline ) {
+
+.hover-decor(
+  @bg-color : none ;
+  @fg-color : inherit ;
+  @text-decor : underline
+) {
   &:hover {
-    color : @color ;
+    background-color : @bg-color ;
+    color : @fg-color ;
     text-decoration : @text-decor ;
   }
 }

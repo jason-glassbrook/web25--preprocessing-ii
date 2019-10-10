@@ -159,10 +159,12 @@ p {
   padding-bottom: 10px;
 }
 a {
+  background-color: none;
   color: inherit;
   text-decoration: none;
 }
 a:hover {
+  background-color: none;
   color: #17a2b8;
   text-decoration: underline;
 }
