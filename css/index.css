@@ -1,1 +1,404 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+a {
+  background-color: none;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  background-color: initial;
+  color: #17a2b8;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    height: auto;
+    width: 90%;
+  }
+}
+.nav-bar {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #c0c0c0;
+  background-color: #ffffff;
+  color: #212529;
+}
+.nav-bar .nav-area {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-area {
+    display: flex ;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-area nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.nav-bar .nav-area nav ul {
+  display: flex ;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-area nav ul {
+    display: flex ;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+  }
+}
+.nav-bar .nav-area nav li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-bar .nav-area nav li:first-child {
+  margin-left: 0;
+}
+.nav-bar .nav-area nav li:last-child {
+  margin-right: 0;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed #c0c0c0;
+  background-color: #ffebcd;
+  color: #212529;
+}
+.footer p {
+  text-align: center;
+  padding: 20px;
+}
+.home {
+  background-color: #ffffff;
+  color: #212529;
+}
+.home header {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.home header .image-content {
+  width: 100%;
+}
+.home header .text-content {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex ;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: stretch;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex ;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.home .content-section .image-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .image-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.home .content-section .image-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex ;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.home .inverse-content .image-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .image-content {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home .content-destination img {
+  width: 100%;
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #c0c0c0;
+  display: flex ;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: stretch;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex ;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
+.home .content-pick .destination .button {
+  background-color: #17a2b8;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+.home .content-pick .destination .button:hover {
+  background-color: #1fc8e3;
+  color: #ffffff;
+  text-decoration: underline;
+}

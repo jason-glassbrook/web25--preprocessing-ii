@@ -1,23 +1,49 @@
 .home {
+  background-color: @main-bg-color;
+  color: @main-fg-color;
+
+  header {
+    border-bottom: @main-border;
+
+    .image-content {
+      .size-w-100of();
+    }
+
+    .text-content {
+      .size-w-100of();
+      .ins-tb(20px);
+    }
+  }
 
   .content-section {
     margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .space-between-content(@wrap-lines: wrap);
 
-   
-    
+    @media @is-mobile {
+      .center-content(@main-axis: column);
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @is-mobile {
+        .size-w-100of();
+        .ins-lr(0);
+      }
     }
 
-    .img-content {
+    .image-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @is-mobile {
+        .size-w-100of();
+        .ins-lr(0);
+      }
+
       img {
+        .size-w-100of();
         border-radius: 10px;
       }
     }
@@ -25,16 +51,30 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: @main-border;
+
+    @media @is-mobile {
+      .center-content(@main-axis: column-reverse);
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @is-mobile {
+        .size-w-100of();
+        .ins-lr(0);
+      }
     }
 
-    .img-content {
+    .image-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @is-mobile {
+        .size-w-100of();
+        .ins-lr(0);
+      }
     }
   }
 
@@ -42,20 +82,39 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @is-mobile {
+      .size-w-100of();
+    }
+
     img {
+      .size-w-100of();
       border-radius: 10px;
     }
   }
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    border-top: @main-border;
+    .space-between-content(@wrap-lines: wrap);
+
+    @media @is-mobile {
+      .center-content(@main-axis: column);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @is-mobile {
+        .size-w-100of();
+      }
+
+      .button {
+        .custom-button(
+          @button-bg-color ; @button-fg-color ; @button-border-color
+        );
+        .size-w-100of();
+      }
     }
   }
-}// home
+} // home
